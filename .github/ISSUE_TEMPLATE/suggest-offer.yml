@@ -1,0 +1,80 @@
+name: Suggest an AI Offer
+description: Propose a documented AI service or product offer
+title: "[OFFER] "
+labels: ["needs-review"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Offer title
+      placeholder: "e.g. AI-powered contract review retainer for law firms"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is included in this offer?
+    validations:
+      required: true
+
+  - type: input
+    id: target_buyers
+    attributes:
+      label: Target buyers
+      description: Who pays for this?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: monetization_model
+    attributes:
+      label: Primary monetization model
+      options:
+        - subscription_saas
+        - usage_based_api
+        - consulting_retainer
+        - project_fee
+        - productized_service
+        - done_for_you
+        - done_with_you
+        - training_workshop
+        - licensing
+        - marketplace_listing
+        - freemium
+        - audit_assessment
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: pricing_signals
+    attributes:
+      label: Pricing signals
+      description: |
+        What pricing have you observed for this type of offer?
+        IMPORTANT: Cite your source (URL, platform, or description).
+        Do NOT invent prices.
+    validations:
+      required: true
+
+  - type: textarea
+    id: delivery
+    attributes:
+      label: How is it delivered?
+      description: What does the delivery process look like?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Quality checklist
+      options:
+        - label: Pricing signals are from observable public sources (not invented)
+          required: true
+        - label: No "guaranteed income" or "passive income" language
+          required: true
+        - label: If regulated domain (health, finance, legal), compliance notes included
+          required: false

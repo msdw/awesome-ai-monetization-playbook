@@ -1,0 +1,40 @@
+name: Suggest a Resource
+description: Propose a tool, template, or resource for AI monetization
+title: "[RESOURCE] "
+labels: ["needs-review"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Why is this useful for AI monetization?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource type
+      options:
+        - tool
+        - template
+        - pricing-guide
+        - community
+        - dataset
+        - tutorial
+        - other
+    validations:
+      required: true
