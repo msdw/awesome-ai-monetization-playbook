@@ -162,3 +162,1574 @@ offers:
       - agency
     source: community
     status: accepted
+
+  - id: ai_rag_chatbot_package
+    title: AI RAG Chatbot Implementation Package
+    summary: >
+      A packaged service to deploy a retrieval-augmented generation chatbot over a company's
+      internal documents or product knowledge base, with source citations and a human review workflow.
+    monetization_models:
+      - project_fee
+      - consulting_retainer
+    target_buyers:
+      - smb_owner
+      - cto_tech_lead
+    target_users:
+      - operations
+      - customer_service
+    industries:
+      - customer_service
+      - software_dev
+    pain_points:
+      - Employees spend hours answering the same questions
+      - Knowledge is scattered across documents, wikis, and emails
+      - Onboarding new team members takes too long
+    value_delivered:
+      - Self-service access to internal knowledge via natural language
+      - Reduced repetitive Q&A burden on senior staff
+      - Source-cited answers that can be verified
+    offer_scope:
+      included:
+        - Document ingestion and chunking
+        - Vector database setup
+        - RAG retrieval and generation pipeline
+        - Basic web interface
+        - Source citation in responses
+        - Human review workflow for sensitive queries
+        - Deployment documentation
+      excluded:
+        - Guaranteed answer accuracy
+        - Unlimited document maintenance
+        - Enterprise SSO unless separately scoped
+        - Legal or medical advice use cases
+    technical_stack:
+      - openai_api
+      - vector_database
+      - python
+    pricing_hypotheses:
+      min: 4000
+      max: 18000
+      currency: USD
+      notes: >
+        Based on observed market rates for RAG implementations by freelancers and small agencies
+        on Upwork, Clutch listings, and consulting community discussions.
+    cost_drivers:
+      - Document volume and format complexity
+      - Number of users and concurrent queries
+      - Integration with existing authentication systems
+      - LLM inference cost per query
+      - Human review workflow complexity
+    delivery_process:
+      - Step 1: Discovery call and document audit (60 min)
+      - Step 2: Document ingestion and chunking setup (2-3 days)
+      - Step 3: RAG pipeline build and testing (3-5 days)
+      - Step 4: Interface setup and human review integration (2 days)
+      - Step 5: Client evaluation and feedback round (3 days)
+      - Step 6: Deployment and documentation handoff
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+      - referrals
+    validation_steps:
+      - Interview 10 operations managers about their most repeated internal questions
+      - Build a demo on a small public document set to show the concept
+      - Measure answer quality and time-to-response versus current process
+    risks:
+      - hallucination_liability
+      - data_privacy
+    compliance_notes: null
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 9
+      buildability: 7
+      market_signal: 8
+      differentiation_potential: 6
+      monetization_potential: 8
+      compliance_risk: 4
+    tags:
+      - b2b
+      - implementation
+      - rag
+      - one_time
+    source: manual_curation
+    status: accepted
+
+  - id: ai_customer_support_agent
+    title: AI Customer Support Agent Package
+    summary: >
+      A packaged implementation of an AI-assisted customer support workflow that handles
+      tier-1 inquiries, drafts responses for human review, and routes complex issues to agents.
+    monetization_models:
+      - project_fee
+      - consulting_retainer
+    target_buyers:
+      - smb_owner
+      - operations_manager
+    target_users:
+      - customer_service
+    industries:
+      - customer_service
+      - ecommerce
+    pain_points:
+      - Support team is overwhelmed by repetitive tier-1 questions
+      - Response times are slow during high-volume periods
+      - New support agents take weeks to become productive
+    value_delivered:
+      - Faster first response to common inquiries
+      - Reduced repetitive load on human agents
+      - Consistent tone and policy compliance in drafted responses
+    offer_scope:
+      included:
+        - Support ticket classification and routing
+        - Response drafting for tier-1 categories
+        - Human approval step before sending
+        - Integration with Zendesk, Intercom, or Freshdesk (one platform)
+        - Escalation rules configuration
+        - Delivery documentation
+      excluded:
+        - Fully autonomous sending without human approval
+        - Multiple platform integrations
+        - Custom compliance workflows for regulated industries
+    technical_stack:
+      - openai_api
+      - python
+      - zendesk_api
+    pricing_hypotheses:
+      min: 5000
+      max: 22000
+      currency: USD
+      notes: >
+        Observed range for AI support workflow implementations by specialist freelancers and agencies.
+        Derived from Upwork project listings and consultant website pricing.
+    cost_drivers:
+      - Number of support categories to handle
+      - Integration complexity with existing help desk
+      - Volume of training examples required
+      - Human oversight workflow requirements
+    delivery_process:
+      - Step 1: Support ticket audit to identify top 10 categories by volume
+      - Step 2: Response template and classification model setup
+      - Step 3: Integration with existing help desk platform
+      - Step 4: Human review workflow configuration
+      - Step 5: Pilot with limited ticket volume (2 weeks)
+      - Step 6: Evaluation, adjustment, and full deployment
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+      - referrals
+    validation_steps:
+      - Interview 5 support managers about their highest-volume ticket categories
+      - Run a manual classification test on a sample of 100 tickets
+      - Measure human agent time saved per week during pilot
+    risks:
+      - hallucination_liability
+      - data_privacy
+    compliance_notes: null
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 8
+      buildability: 7
+      market_signal: 8
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 4
+    tags:
+      - b2b
+      - customer_service
+      - implementation
+      - automation
+    source: manual_curation
+    status: accepted
+
+  - id: ai_sales_research_agent
+    title: AI Sales Research Agent Package
+    summary: >
+      A productized service that builds an AI workflow to research target accounts,
+      identify key contacts, and produce personalized outreach briefs for sales teams.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - sales_manager
+      - smb_owner
+    target_users:
+      - sales_team
+    industries:
+      - marketing
+      - software_dev
+    pain_points:
+      - Sales reps spend 2-3 hours per account on manual research
+      - Outreach personalization is inconsistent across the team
+      - New reps take months to learn how to research accounts effectively
+    value_delivered:
+      - Account research briefs in under 10 minutes per account
+      - Consistent research depth across the sales team
+      - Reps can spend more time on outreach and calls
+    offer_scope:
+      included:
+        - Account research workflow (company overview, pain signals, recent news)
+        - Key contact identification and brief
+        - Outreach angle recommendations
+        - Delivery as structured brief (PDF or Google Doc)
+        - SOP for the research process
+      excluded:
+        - CRM integration unless separately scoped
+        - Email sequence writing
+        - Contact data purchasing or scraping
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 2500
+      max: 8000
+      currency: USD
+      notes: >
+        Derived from observed pricing for sales enablement automation services
+        on Upwork and in B2B sales consulting communities.
+    cost_drivers:
+      - Research workflow complexity and sources used
+      - Number of accounts processed per run
+      - Integration with existing CRM or sales tools
+      - Human review and quality check time
+    delivery_process:
+      - Step 1: Sales workflow discovery to understand current research process
+      - Step 2: Research sources and data structure definition
+      - Step 3: AI workflow build and testing on sample accounts
+      - Step 4: Brief template and output format design
+      - Step 5: Sales team walkthrough and feedback
+      - Step 6: SOP documentation and handoff
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+    validation_steps:
+      - Time the current research process with 3 sales reps
+      - Build a sample brief for one target account and show it to the team
+      - Measure time saved per account with the new workflow
+    risks:
+      - data_privacy
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 8
+      buildability: 8
+      market_signal: 7
+      differentiation_potential: 6
+      monetization_potential: 7
+      compliance_risk: 2
+    tags:
+      - b2b
+      - sales
+      - automation
+      - one_time
+    source: manual_curation
+    status: accepted
+
+  - id: ai_reporting_automation_package
+    title: AI Reporting Automation Package
+    summary: >
+      A productized service that builds an automated weekly or monthly reporting workflow,
+      pulling data from existing tools and generating structured reports with narrative summaries.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - marketing_manager
+      - operations_manager
+    target_users:
+      - operations
+      - marketing_team
+    industries:
+      - operations
+      - marketing
+    pain_points:
+      - Monthly reports take 4-8 hours to compile manually
+      - Reports are late, inconsistent, or skipped when teams are busy
+      - Stakeholders want narrative insights, not just raw numbers
+    value_delivered:
+      - Automated report generation on schedule
+      - Consistent format and data accuracy
+      - AI-generated narrative summary of key trends
+    offer_scope:
+      included:
+        - Data source connection (up to 3 sources)
+        - Report template design
+        - AI narrative summary generation
+        - Scheduled delivery via email or shared drive
+        - One round of template revisions
+      excluded:
+        - Custom data pipeline engineering
+        - Real-time dashboards
+        - More than 3 data source integrations
+    technical_stack:
+      - openai_api
+      - python
+      - google_sheets_api
+    pricing_hypotheses:
+      min: 2000
+      max: 7000
+      currency: USD
+      notes: >
+        Based on observed market rates for reporting automation projects
+        from freelance and agency discussions on LinkedIn and Indie Hackers.
+    cost_drivers:
+      - Number of data sources and API complexity
+      - Report complexity and narrative depth
+      - Scheduling infrastructure requirements
+      - Human review of generated narratives
+    delivery_process:
+      - Step 1: Reporting requirements and data source audit
+      - Step 2: Data connection setup and testing
+      - Step 3: Report template and narrative prompt design
+      - Step 4: Automated workflow build and scheduling
+      - Step 5: First automated report review with client
+      - Step 6: Revisions and handoff documentation
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+      - referrals
+    validation_steps:
+      - Identify 5 operations or marketing managers who compile reports manually
+      - Ask them to share their current report format and time cost
+      - Build a sample report for one data source and show it to them
+    risks:
+      - data_privacy
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 8
+      buildability: 8
+      market_signal: 7
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 2
+    tags:
+      - b2b
+      - automation
+      - reporting
+      - one_time
+    source: manual_curation
+    status: accepted
+
+  - id: ai_meeting_followup_agent
+    title: AI Meeting Follow-up Agent
+    summary: >
+      A productized service that builds an AI workflow to process meeting recordings or transcripts
+      and generate structured follow-up summaries, action item lists, and draft follow-up emails.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - sales_manager
+      - operations_manager
+    target_users:
+      - sales_team
+      - operations
+    industries:
+      - operations
+      - marketing
+    pain_points:
+      - Action items are forgotten between meetings
+      - Follow-up emails take 20-30 minutes to write after each call
+      - Meeting notes are inconsistent or never written
+    value_delivered:
+      - Structured action item list from every meeting within minutes
+      - Draft follow-up email ready for review in under 5 minutes
+      - Consistent meeting documentation for all stakeholders
+    offer_scope:
+      included:
+        - Transcript processing workflow (Zoom, Meet, or uploaded audio)
+        - Action item extraction and formatting
+        - Draft follow-up email generation
+        - Human review step before sending
+        - SOP and delivery guide
+      excluded:
+        - CRM auto-population without separate integration scope
+        - Calendar integration
+        - Real-time transcription setup
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 1500
+      max: 5000
+      currency: USD
+      notes: >
+        Based on market observations for workflow automation productized services.
+        Derived from Hacker News Show HN discussions and Indie Hackers product posts.
+    cost_drivers:
+      - Integration with transcription source
+      - Action item extraction accuracy requirements
+      - Human review step complexity
+      - Volume of meetings per week
+    delivery_process:
+      - Step 1: Meeting workflow audit to understand current documentation approach
+      - Step 2: Transcript source selection and connection
+      - Step 3: AI extraction workflow build and testing
+      - Step 4: Output format and review workflow design
+      - Step 5: Pilot with 5-10 real meetings
+      - Step 6: Refinement, SOP, and handoff
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+    validation_steps:
+      - Interview sales managers about current follow-up time and missed action items
+      - Run the workflow on 5 meeting transcripts and measure quality
+      - Track time saved per meeting versus current process
+    risks:
+      - data_privacy
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 6
+      ai_fit: 9
+      buildability: 8
+      market_signal: 7
+      differentiation_potential: 5
+      monetization_potential: 6
+      compliance_risk: 2
+    tags:
+      - b2b
+      - productivity
+      - automation
+      - one_time
+    source: manual_curation
+    status: accepted
+
+  - id: ai_contract_review_copilot
+    title: AI Contract Comparison and Review Copilot
+    summary: >
+      A packaged tool and implementation service that enables a legal or operations team
+      to compare contracts against a standard template, flag deviations, and summarize key terms.
+      Human legal review is required before acting on any output.
+    monetization_models:
+      - project_fee
+      - consulting_retainer
+    target_buyers:
+      - legal_professional
+      - operations_manager
+    target_users:
+      - legal_team
+      - operations
+    industries:
+      - legal
+      - operations
+    pain_points:
+      - Contract review takes hours per document for standard agreements
+      - Teams miss non-standard clauses in high-volume contract workflows
+      - Legal costs for routine contract review are high
+    value_delivered:
+      - Faster identification of non-standard clauses in routine contracts
+      - Structured comparison report against defined template
+      - Reduced time on first-pass review for legal teams
+    offer_scope:
+      included:
+        - Template comparison workflow for a defined contract type
+        - Deviation flagging and summary report
+        - Human review step before any action
+        - Documentation of limitations
+      excluded:
+        - Legal advice
+        - Guaranteed accuracy of clause identification
+        - Complex multi-jurisdiction compliance analysis
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 4000
+      max: 15000
+      currency: USD
+      notes: >
+        Derived from observed pricing for legal tech automation projects
+        and AI contract review tool pricing observed on vendor websites.
+    cost_drivers:
+      - Contract complexity and length
+      - Number of contract types to support
+      - Integration with document management system
+      - Human review workflow requirements
+    delivery_process:
+      - Step 1: Legal team requirements session covering contract types and key deviations
+      - Step 2: Template and deviation definition with legal stakeholder
+      - Step 3: Extraction and comparison workflow build
+      - Step 4: Testing on sample contracts with legal review
+      - Step 5: Output format and review process design
+      - Step 6: Deployment, documentation, and handoff
+    sales_channels:
+      - linkedin_outreach
+      - referrals
+    validation_steps:
+      - Interview legal ops managers about their highest-volume routine contract type
+      - Run comparison on 5 sample contracts and present findings to a lawyer for accuracy review
+      - Measure time saved on first-pass review
+    risks:
+      - hallucination_liability
+      - data_privacy
+    compliance_notes: >
+      This tool assists with first-pass review only. It does not provide legal advice.
+      All contract decisions require qualified legal review. Do not use for high-stakes
+      or complex contracts without explicit legal sign-off. Data handling must comply
+      with client confidentiality requirements.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 8
+      ai_fit: 8
+      buildability: 6
+      market_signal: 7
+      differentiation_potential: 6
+      monetization_potential: 8
+      compliance_risk: 7
+    tags:
+      - b2b
+      - legal
+      - automation
+      - implementation
+    source: manual_curation
+    status: accepted
+
+  - id: ai_crm_enrichment_workflow
+    title: AI CRM Enrichment Workflow
+    summary: >
+      A productized service that builds an AI workflow to enrich CRM contact and account records
+      with firmographic data, recent news signals, and lead scoring inputs pulled from public sources.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - sales_manager
+      - marketing_manager
+    target_users:
+      - sales_team
+    industries:
+      - marketing
+      - software_dev
+    pain_points:
+      - CRM data is stale, incomplete, or missing key fields
+      - Sales reps waste time on manual research before outreach
+      - Lead scoring models lack up-to-date signals
+    value_delivered:
+      - Enriched company and contact records in CRM
+      - Prioritized lead lists based on AI-scored signals
+      - Reduced pre-call research time for sales reps
+    offer_scope:
+      included:
+        - CRM record enrichment workflow (company size, industry, tech stack, recent news)
+        - Enrichment from public data sources only
+        - Lead scoring model with defined criteria
+        - Integration with HubSpot or Salesforce (one platform)
+        - Delivery documentation and SOP
+      excluded:
+        - Purchase of third-party data subscriptions
+        - Private or personal data scraping
+        - Real-time continuous enrichment
+    technical_stack:
+      - openai_api
+      - python
+      - hubspot_api
+    pricing_hypotheses:
+      min: 2500
+      max: 8000
+      currency: USD
+      notes: >
+        Based on observed market rates for CRM enrichment and sales automation
+        services from Upwork listings and B2B sales tool community discussions.
+    cost_drivers:
+      - Number of CRM records to enrich
+      - API integration complexity
+      - Data source selection and quality
+      - Human review and accuracy validation
+    delivery_process:
+      - Step 1: CRM audit to identify missing fields and relevant signals
+      - Step 2: Data source selection and enrichment field mapping
+      - Step 3: Enrichment workflow build and CRM integration
+      - Step 4: Pilot enrichment on 100 records with quality review
+      - Step 5: Full enrichment run and lead scoring setup
+      - Step 6: Documentation, SOP, and handoff
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+    validation_steps:
+      - Review a sample of 50 CRM records to identify enrichment gaps
+      - Enrich 20 records manually and measure time versus AI workflow
+      - Test lead scoring signal quality with the sales team
+    risks:
+      - data_privacy
+      - api_terms_change
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 8
+      buildability: 7
+      market_signal: 7
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 3
+    tags:
+      - b2b
+      - sales
+      - data_enrichment
+      - automation
+    source: manual_curation
+    status: accepted
+
+  - id: ai_document_extraction_service
+    title: AI Document Data Extraction Service
+    summary: >
+      A productized service that builds an AI workflow to extract structured data from
+      unstructured documents such as invoices, forms, PDFs, or scanned images and
+      deliver it as structured output for downstream use.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - operations_manager
+      - finance_professional
+    target_users:
+      - operations
+      - finance_team
+    industries:
+      - operations
+      - finance
+    pain_points:
+      - Data entry from documents is time-consuming and error-prone
+      - High volume of incoming documents creates operational bottlenecks
+      - Manual extraction creates inconsistent data quality in downstream systems
+    value_delivered:
+      - Structured data output from documents at scale
+      - Reduced manual data entry time
+      - Consistent field extraction with human review step
+    offer_scope:
+      included:
+        - Document parsing and field extraction for a defined document type
+        - Structured output (CSV, JSON, or Google Sheets)
+        - Human review and correction interface
+        - Processing pipeline for batch documents
+        - Documentation
+      excluded:
+        - Guaranteed accuracy on all document types
+        - Handwritten document processing without specific assessment
+        - Complex table extraction without separate scoping
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 2000
+      max: 8000
+      currency: USD
+      notes: >
+        Based on observed pricing for document processing automation services.
+        Derived from Upwork and agency pricing discussions.
+    cost_drivers:
+      - Document type complexity and variation
+      - Volume of documents to process
+      - Accuracy requirements and human review depth
+      - Output format and downstream integration
+    delivery_process:
+      - Step 1: Document type analysis by reviewing a sample of 50 actual documents
+      - Step 2: Field extraction definition and accuracy criteria
+      - Step 3: Extraction pipeline build and testing
+      - Step 4: Human review interface setup
+      - Step 5: Accuracy evaluation on validation set
+      - Step 6: Production deployment and documentation
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+      - referrals
+    validation_steps:
+      - Collect 50 sample documents from a target client
+      - Run extraction and measure accuracy versus manual entry
+      - Calculate time saved per 100 documents
+    risks:
+      - hallucination_liability
+      - data_privacy
+    compliance_notes: >
+      Financial documents may contain sensitive personal or corporate data.
+      Data handling must comply with applicable data protection requirements.
+      Do not process regulated financial records without confirming compliance obligations.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 8
+      ai_fit: 9
+      buildability: 7
+      market_signal: 8
+      differentiation_potential: 5
+      monetization_potential: 8
+      compliance_risk: 5
+    tags:
+      - b2b
+      - automation
+      - data_extraction
+      - operations
+    source: manual_curation
+    status: accepted
+
+  - id: ai_newsletter_research_assistant
+    title: AI Newsletter Research Assistant
+    summary: >
+      A productized workflow that uses AI to research, curate, and summarize content
+      for a weekly newsletter, reducing research time from hours to under 30 minutes.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - content_creator
+      - marketing_manager
+    target_users:
+      - content_creator
+    industries:
+      - media_content
+      - marketing
+    pain_points:
+      - Newsletter research takes 3-5 hours per issue
+      - Staying on top of sources is exhausting at consistent publishing frequency
+      - Research quality varies depending on available time each week
+    value_delivered:
+      - Curated reading list and summaries from defined sources each week
+      - Key talking points and angles for each topic
+      - Draft introduction and section hooks for human editing
+    offer_scope:
+      included:
+        - Source monitoring for up to 20 defined URLs or RSS feeds
+        - Weekly summary digest of relevant stories
+        - AI-generated summary and angle suggestions
+        - Delivery as Google Doc or Notion page
+      excluded:
+        - Full newsletter writing and editing
+        - Social media distribution
+        - Email platform integration
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 800
+      max: 2500
+      currency: USD
+      notes: >
+        Based on observed pricing for content research productized services
+        from creator community discussions on LinkedIn and Gumroad product listings.
+    cost_drivers:
+      - Number of sources monitored
+      - Research depth and summarization complexity
+      - Delivery format and integration requirements
+      - Human review time
+    delivery_process:
+      - Step 1: Newsletter audit covering topic, sources, and format review
+      - Step 2: Source list and monitoring configuration
+      - Step 3: Research workflow and summary template build
+      - Step 4: First draft research package delivered for review
+      - Step 5: Feedback and calibration
+      - Step 6: Handoff with SOP for ongoing use
+    sales_channels:
+      - linkedin_outreach
+      - content_creator_communities
+    validation_steps:
+      - Interview 5 newsletter writers about their research process and time cost
+      - Deliver one research package to a pilot user and measure time saved
+      - Collect feedback on output quality after 3 issues
+    risks:
+      - hallucination_liability
+      - commoditization
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 6
+      ai_fit: 8
+      buildability: 9
+      market_signal: 6
+      differentiation_potential: 5
+      monetization_potential: 6
+      compliance_risk: 1
+    tags:
+      - b2c
+      - content
+      - automation
+      - research
+    source: manual_curation
+    status: accepted
+
+  - id: ai_marketplace_listing_optimizer
+    title: AI Marketplace Listing Optimizer
+    summary: >
+      A productized service that uses AI to analyze and rewrite product listings
+      for e-commerce platforms with optimized titles, descriptions, and bullet points
+      based on platform best practices.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - ecommerce_owner
+    target_users:
+      - ecommerce_team
+    industries:
+      - ecommerce
+    pain_points:
+      - Product listings are poorly written and underperform in search
+      - Writing optimized listings for hundreds of SKUs is time-consuming
+      - Conversion rates are low but the cause is unclear
+    value_delivered:
+      - Optimized titles, descriptions, and bullet points for each product
+      - Platform-aligned format for the target marketplace
+      - Consistent brand voice across the catalog
+    offer_scope:
+      included:
+        - Listing optimization for up to 50 SKUs per run
+        - Title, bullet points, and description rewrite
+        - Keyword integration from provided or researched list
+        - Delivery in CSV for upload
+      excluded:
+        - A/B testing setup
+        - Ad campaign management
+        - More than 50 SKUs in base package
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 500
+      max: 3000
+      currency: USD
+      notes: >
+        Based on observed pricing for listing optimization services on Fiverr,
+        Upwork, and e-commerce community discussions.
+    cost_drivers:
+      - Number of SKUs in the catalog
+      - Research and keyword integration depth
+      - Human review and brand voice calibration
+      - Revision rounds required
+    delivery_process:
+      - Step 1: Catalog review and product category analysis
+      - Step 2: Brand voice and keyword brief from client
+      - Step 3: AI-assisted listing generation for all SKUs
+      - Step 4: Human review and quality check
+      - Step 5: Client review round
+      - Step 6: Final delivery in upload-ready format
+    sales_channels:
+      - cold_email
+      - ecommerce_communities
+    validation_steps:
+      - Run a sample optimization on 5 listings and show to an ecommerce seller
+      - Compare optimized versus original listing quality with client
+      - Offer first 10 listings free to validate demand
+    risks:
+      - commoditization
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 9
+      buildability: 9
+      market_signal: 8
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 1
+    tags:
+      - b2c
+      - ecommerce
+      - content
+      - productized
+    source: manual_curation
+    status: accepted
+
+  - id: ai_llm_fine_tuning_service
+    title: AI LLM Fine-Tuning and Evaluation Service
+    summary: >
+      A project-based service to fine-tune a language model on a client's domain-specific
+      data to improve accuracy, tone consistency, or output format for a specific use case,
+      with a structured evaluation framework.
+    monetization_models:
+      - project_fee
+    target_buyers:
+      - cto_tech_lead
+      - enterprise_innovation
+    target_users:
+      - developer_builder
+      - operations
+    industries:
+      - software_dev
+      - operations
+    pain_points:
+      - Base LLM models produce outputs that require heavy post-processing for their domain
+      - Prompting alone cannot achieve the output format and accuracy needed
+      - Evaluation is ad hoc and not reproducible
+    value_delivered:
+      - Fine-tuned model optimized for the client's specific task
+      - Evaluation framework with reproducible benchmark
+      - Documentation for deployment and ongoing monitoring
+    offer_scope:
+      included:
+        - Dataset preparation and cleaning
+        - Fine-tuning run on defined model and platform
+        - Evaluation against defined benchmark metrics
+        - Deployment documentation
+        - Human review of evaluation results
+      excluded:
+        - Infrastructure deployment at scale
+        - Ongoing model maintenance without separate retainer
+        - Proprietary data pipeline engineering
+    technical_stack:
+      - openai_api
+      - python
+      - huggingface
+    pricing_hypotheses:
+      min: 6000
+      max: 25000
+      currency: USD
+      notes: >
+        Based on observed market rates for ML fine-tuning engagements from
+        freelance ML community discussions and specialist agency pricing.
+    cost_drivers:
+      - Dataset size and quality requirements
+      - Number of fine-tuning iterations
+      - Evaluation complexity and benchmark design
+      - Compute costs for open-source model fine-tuning
+    delivery_process:
+      - Step 1: Use case analysis and fine-tuning feasibility assessment
+      - Step 2: Dataset collection and preparation guidelines
+      - Step 3: Dataset cleaning and format preparation
+      - Step 4: Fine-tuning runs with evaluation checkpoints
+      - Step 5: Benchmark evaluation and results review with client
+      - Step 6: Deployment documentation and handoff
+    sales_channels:
+      - linkedin_outreach
+      - developer_communities
+    validation_steps:
+      - Assess whether the use case genuinely requires fine-tuning versus better prompting
+      - Run a baseline evaluation on the client's use case with standard prompting
+      - Demonstrate measurable improvement from fine-tuning on a small sample before committing
+    risks:
+      - data_privacy
+      - hallucination_liability
+      - api_terms_change
+    compliance_notes: null
+    scoring:
+      pain_intensity: 6
+      willingness_to_pay: 7
+      ai_fit: 9
+      buildability: 5
+      market_signal: 6
+      differentiation_potential: 7
+      monetization_potential: 7
+      compliance_risk: 3
+    tags:
+      - b2b
+      - technical
+      - ml
+      - implementation
+    source: manual_curation
+    status: accepted
+
+  - id: ai_strategy_workshop
+    title: AI Strategy Workshop for Leadership Teams
+    summary: >
+      A facilitated half-day or full-day workshop for executive or senior management teams
+      to assess AI opportunities, prioritize use cases, and create a 90-day AI implementation roadmap.
+    monetization_models:
+      - training_workshop
+      - consulting_retainer
+    target_buyers:
+      - enterprise_innovation
+      - cto_tech_lead
+    target_users:
+      - executive_team
+      - operations
+    industries:
+      - operations
+      - software_dev
+    pain_points:
+      - Leadership has heard about AI but lacks a structured approach to evaluate it
+      - AI projects start in silos without strategic alignment
+      - Teams do not know how to prioritize which AI initiatives to pursue first
+    value_delivered:
+      - Shared understanding of AI opportunity space across the leadership team
+      - Prioritized list of AI initiatives with effort and impact assessment
+      - 90-day implementation roadmap with clear ownership
+    offer_scope:
+      included:
+        - Pre-workshop business and process assessment (async)
+        - Facilitated half-day or full-day workshop session
+        - AI opportunity mapping exercise
+        - Prioritization framework and scoring
+        - Written 90-day roadmap document
+      excluded:
+        - Implementation of any initiative
+        - Technical architecture decisions
+        - Vendor selection without separate engagement
+    technical_stack:
+      - openai_api
+      - presentation_tools
+    pricing_hypotheses:
+      min: 3500
+      max: 12000
+      currency: USD
+      notes: >
+        Based on observed pricing for AI strategy workshop facilitation
+        from LinkedIn consulting community discussions and consulting firm pricing.
+    cost_drivers:
+      - Workshop duration (half-day vs full-day)
+      - Pre-workshop research depth
+      - Number of participants and facilitation complexity
+      - Roadmap document depth
+    delivery_process:
+      - Step 1: Pre-workshop intake and business context review (async, 2-3 hours)
+      - Step 2: Workshop facilitation (half or full day on-site or virtual)
+      - Step 3: Opportunity map and prioritization exercise during workshop
+      - Step 4: Roadmap document drafting (within 5 business days)
+      - Step 5: Roadmap review call and final delivery
+    sales_channels:
+      - linkedin_outreach
+      - referrals
+      - content_marketing
+    validation_steps:
+      - Run a free 60-minute AI opportunity mapping session with one prospect team
+      - Offer the roadmap document as the paid deliverable
+      - Measure workshop satisfaction and downstream consulting conversions
+    risks:
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 8
+      ai_fit: 7
+      buildability: 9
+      market_signal: 8
+      differentiation_potential: 6
+      monetization_potential: 8
+      compliance_risk: 1
+    tags:
+      - b2b
+      - consulting
+      - training
+      - enterprise
+    source: manual_curation
+    status: accepted
+
+  - id: ai_product_review_analysis
+    title: AI Product Review Analysis Service
+    summary: >
+      A productized service that processes large volumes of product reviews from e-commerce
+      platforms or app stores and delivers structured reports on sentiment, feature mentions,
+      and recurring complaints.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - product_manager
+      - ecommerce_owner
+    target_users:
+      - product_team
+    industries:
+      - ecommerce
+      - software_dev
+    pain_points:
+      - Reading thousands of reviews manually to find patterns is impractical
+      - Product teams miss recurring customer complaints until they escalate
+      - Marketing claims do not reflect what customers actually value
+    value_delivered:
+      - Structured sentiment and theme analysis from review data
+      - Prioritized list of product strengths and complaints by frequency
+      - Language customers use to describe the product for marketing and product teams
+    offer_scope:
+      included:
+        - Processing up to 2,000 reviews per run
+        - Sentiment classification and theme extraction
+        - Structured report with visual summary
+        - Top 10 positive and negative themes with direct quotes
+      excluded:
+        - Review scraping (client must provide review data)
+        - Competitive review analysis without separate scope
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 500
+      max: 2500
+      currency: USD
+      notes: >
+        Based on observed pricing for text analysis and market research productized services.
+        Derived from Gumroad product listings and consultant pricing discussions.
+    cost_drivers:
+      - Volume of reviews to process
+      - Depth of theme taxonomy
+      - Report format and visualization requirements
+      - Human review and interpretation
+    delivery_process:
+      - Step 1: Review data collection by client (CSV export from platform)
+      - Step 2: Data cleaning and category setup
+      - Step 3: AI sentiment and theme analysis
+      - Step 4: Report generation and human interpretation layer
+      - Step 5: Report delivery with walkthrough call
+    sales_channels:
+      - cold_email
+      - linkedin_outreach
+      - ecommerce_communities
+    validation_steps:
+      - Process a public dataset of 500 reviews for a demo product
+      - Show the report to product managers and e-commerce owners
+      - Measure whether insights are actionable versus what they already know
+    risks:
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 9
+      buildability: 9
+      market_signal: 7
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 1
+    tags:
+      - b2b
+      - research
+      - data_analysis
+      - productized
+    source: manual_curation
+    status: accepted
+
+  - id: ai_training_workshop_teams
+    title: AI Training Workshop for Business Teams
+    summary: >
+      A corporate half-day or full-day training workshop teaching non-technical business
+      teams practical AI skills including prompting, workflow integration, and responsible use.
+    monetization_models:
+      - training_workshop
+    target_buyers:
+      - hr_manager
+      - operations_manager
+      - enterprise_innovation
+    target_users:
+      - operations
+      - marketing_team
+    industries:
+      - operations
+      - marketing
+    pain_points:
+      - Teams have heard about AI but do not know how to apply it to their actual work
+      - Individual experimentation is uncoordinated and produces inconsistent results
+      - Leadership wants to enable AI use but lacks a structured starting point
+    value_delivered:
+      - Practical prompting skills applicable to the team's specific workflows
+      - Shared vocabulary and framework for AI discussions within the organization
+      - Responsible use guidelines tailored to the team's context
+    offer_scope:
+      included:
+        - Pre-workshop needs assessment (30-min call with team lead)
+        - Facilitated half-day workshop for up to 20 participants
+        - Hands-on exercises using real work examples
+        - Take-home prompt guide and workflow checklist
+        - 30-day follow-up Q&A access via email
+      excluded:
+        - Implementation of AI systems
+        - Individual coaching beyond group sessions
+        - Tool procurement or licensing
+    technical_stack:
+      - openai_api
+      - presentation_tools
+    pricing_hypotheses:
+      min: 2500
+      max: 8000
+      currency: USD
+      notes: >
+        Based on observed corporate AI training pricing from LinkedIn consultant profiles
+        and learning and development community discussions.
+    cost_drivers:
+      - Workshop duration and group size
+      - Customization depth for specific workflows
+      - Travel if on-site
+      - Pre-workshop material preparation
+    delivery_process:
+      - Step 1: Needs assessment call with team lead (30 min)
+      - Step 2: Workshop customization with industry and role-specific examples
+      - Step 3: Workshop facilitation (half or full day)
+      - Step 4: Handout and resource delivery
+      - Step 5: 30-day email Q&A window
+    sales_channels:
+      - linkedin_outreach
+      - referrals
+      - hr_communities
+    validation_steps:
+      - Run one free workshop for a small team and collect detailed feedback
+      - Measure participant confidence before and after using a simple survey
+      - Ask the team lead if they would recommend to peers
+    risks:
+      - commoditization
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 7
+      buildability: 9
+      market_signal: 8
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 1
+    tags:
+      - b2b
+      - training
+      - corporate
+      - workshop
+    source: manual_curation
+    status: accepted
+
+  - id: ai_rfp_response_assistant
+    title: AI RFP Response Assistant
+    summary: >
+      A productized workflow that uses AI to accelerate the drafting of responses to
+      Requests for Proposals by assembling relevant content from a knowledge base,
+      drafting answers to standard questions, and flagging gaps for human completion.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - operations_manager
+      - sales_manager
+    target_users:
+      - sales_team
+      - operations
+    industries:
+      - operations
+      - software_dev
+    pain_points:
+      - RFP responses take 15-40 hours each for complex proposals
+      - Teams repeat the same work for each RFP instead of reusing prior answers
+      - Deadline pressure leads to low-quality or incomplete responses
+    value_delivered:
+      - First draft of standard RFP sections in hours instead of days
+      - Reusable answer library for recurring question types
+      - Human reviewer focused on gaps and customization rather than standard content
+    offer_scope:
+      included:
+        - Answer library setup from existing proposal documents
+        - RFP classification and section mapping
+        - AI draft generation with source references
+        - Human review checklist for completion
+        - Documentation
+      excluded:
+        - Strategic bid or no-bid analysis
+        - Custom graphics or visual design
+        - Legal review of compliance clauses
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 2500
+      max: 9000
+      currency: USD
+      notes: >
+        Based on observed market rates for proposal automation and knowledge management tools.
+        Derived from competitor tool pricing and freelance RFP specialist community discussions.
+    cost_drivers:
+      - Existing document library size and quality
+      - Number of RFP section types to support
+      - Integration with existing document management
+      - Human review and quality assurance time
+    delivery_process:
+      - Step 1: RFP process audit covering volume, common sections, and pain points
+      - Step 2: Existing proposal document collection and analysis
+      - Step 3: Answer library build from historical content
+      - Step 4: RFP processing workflow build and testing
+      - Step 5: Pilot with one live RFP under human supervision
+      - Step 6: Refinement, documentation, and handoff
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+    validation_steps:
+      - Identify companies that respond to 5 or more RFPs per month
+      - Process one historical RFP with the workflow and measure time savings
+      - Compare draft quality to final submitted version
+    risks:
+      - hallucination_liability
+      - data_privacy
+    compliance_notes: null
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 8
+      ai_fit: 8
+      buildability: 7
+      market_signal: 7
+      differentiation_potential: 6
+      monetization_potential: 8
+      compliance_risk: 2
+    tags:
+      - b2b
+      - sales
+      - automation
+      - implementation
+    source: manual_curation
+    status: accepted
+
+  - id: ai_open_source_deployment_package
+    title: AI Open-Source Tool Deployment Package
+    summary: >
+      A productized service to deploy and configure a self-hosted open-source AI tool
+      for a company's internal team, with setup documentation and a 30-day support window.
+    monetization_models:
+      - project_fee
+      - consulting_retainer
+    target_buyers:
+      - cto_tech_lead
+      - smb_owner
+    target_users:
+      - developer_builder
+      - operations
+    industries:
+      - software_dev
+      - operations
+    pain_points:
+      - Companies want to use AI tools internally without sending data to third-party APIs
+      - Engineering teams lack time to configure and deploy self-hosted AI infrastructure
+      - Setup documentation for open-source tools requires significant troubleshooting
+    value_delivered:
+      - Working self-hosted AI tool accessible to the internal team
+      - Configured for company-specific use with model selection and access control
+      - Documentation and runbook for ongoing management
+    offer_scope:
+      included:
+        - Server or cloud environment provisioning guidance
+        - Open-source tool installation and configuration
+        - User access and authentication setup
+        - Basic customization for company context
+        - Deployment runbook
+        - 30-day support window for questions
+      excluded:
+        - Ongoing infrastructure management
+        - Custom development beyond configuration
+        - Security audit or penetration testing
+    technical_stack:
+      - python
+      - docker
+      - linux_server
+    pricing_hypotheses:
+      min: 2000
+      max: 8000
+      currency: USD
+      notes: >
+        Based on observed market rates for DevOps and self-hosted tool setup services
+        on Upwork and developer community discussions.
+    cost_drivers:
+      - Infrastructure complexity and cloud environment
+      - Number of tools and integrations to configure
+      - Security and access control requirements
+      - Documentation depth
+    delivery_process:
+      - Step 1: Requirements call covering tool selection, environment, and team size
+      - Step 2: Environment assessment and setup planning
+      - Step 3: Installation and configuration
+      - Step 4: User access and authentication setup
+      - Step 5: Testing and handoff walkthrough
+      - Step 6: Runbook delivery and 30-day support window start
+    sales_channels:
+      - linkedin_outreach
+      - developer_communities
+      - cold_email
+    validation_steps:
+      - Identify companies that have expressed interest in self-hosted AI tools
+      - Build a demo deployment for one open-source tool and document the process
+      - Offer the deployment as a fixed-price service to 5 prospects
+    risks:
+      - data_privacy
+      - api_terms_change
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 7
+      buildability: 8
+      market_signal: 7
+      differentiation_potential: 6
+      monetization_potential: 7
+      compliance_risk: 3
+    tags:
+      - b2b
+      - technical
+      - implementation
+      - self_hosted
+    source: manual_curation
+    status: accepted
+
+  - id: ai_data_cleaning_service
+    title: AI Data Cleaning and Normalization Service
+    summary: >
+      A productized service that uses AI to clean, normalize, deduplicate, and validate
+      a client's existing dataset (CRM, contact list, product catalog, or database export)
+      with structured output and a quality report.
+    monetization_models:
+      - productized_service
+      - done_for_you
+    target_buyers:
+      - operations_manager
+      - marketing_manager
+    target_users:
+      - operations
+      - data_team
+    industries:
+      - operations
+      - marketing
+    pain_points:
+      - CRM and contact data is full of duplicates, inconsistent formats, and missing fields
+      - Data quality issues create downstream problems in marketing, reporting, and operations
+      - Manual data cleaning is tedious, slow, and produces inconsistent results
+    value_delivered:
+      - Cleaned, normalized, and deduplicated dataset
+      - Quality report identifying what was changed and confidence levels
+      - Structured output ready for import back to source system
+    offer_scope:
+      included:
+        - Dataset cleaning for up to 10,000 records
+        - Duplicate detection and merge recommendations
+        - Field normalization and format standardization
+        - Quality report with before and after metrics
+        - Delivery as cleaned CSV or spreadsheet
+      excluded:
+        - Guaranteed 100% accuracy on ambiguous records
+        - Ongoing data maintenance
+        - Real-time database sync
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 500
+      max: 3000
+      currency: USD
+      notes: >
+        Based on observed market rates for data cleaning projects on Upwork
+        and data services community pricing discussions.
+    cost_drivers:
+      - Dataset size and field complexity
+      - Duplicate detection sensitivity requirements
+      - Human review depth for ambiguous records
+      - Delivery format and import preparation
+    delivery_process:
+      - Step 1: Dataset review by sampling 100 records to assess quality issues
+      - Step 2: Cleaning rules definition with client
+      - Step 3: AI-assisted cleaning run
+      - Step 4: Human review of flagged ambiguous records
+      - Step 5: Quality report generation
+      - Step 6: Delivery and import guidance
+    sales_channels:
+      - cold_email
+      - linkedin_outreach
+      - referrals
+    validation_steps:
+      - Process a sample of 500 records and produce a quality report
+      - Show the before and after comparison to an operations or marketing manager
+      - Measure time to clean 1,000 records versus manual process
+    risks:
+      - data_privacy
+      - hallucination_liability
+    compliance_notes: null
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 7
+      ai_fit: 8
+      buildability: 9
+      market_signal: 7
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 2
+    tags:
+      - b2b
+      - data
+      - operations
+      - productized
+    source: manual_curation
+    status: accepted
+
+  - id: ai_compliance_evidence_collector
+    title: AI Compliance Evidence Collection Workflow
+    summary: >
+      A packaged workflow that uses AI to systematically gather, organize, and summarize
+      evidence for compliance audits (SOC 2, ISO 27001, or similar frameworks),
+      reducing the manual time required for evidence collection cycles.
+    monetization_models:
+      - project_fee
+      - consulting_retainer
+    target_buyers:
+      - operations_manager
+      - cto_tech_lead
+    target_users:
+      - operations
+      - security_team
+    industries:
+      - software_dev
+      - finance
+    pain_points:
+      - Compliance evidence collection takes 2-4 weeks of manual effort per audit cycle
+      - Evidence is scattered across tools, drives, and ticketing systems
+      - Repetitive audit preparation consumes engineering and operations team capacity
+    value_delivered:
+      - Structured evidence package organized by control framework
+      - Reduced evidence collection time per audit cycle
+      - Consistent evidence quality across audit cycles
+    offer_scope:
+      included:
+        - Evidence source mapping for a defined compliance framework
+        - Automated collection from up to 5 integrated tools
+        - AI-assisted organization and labeling by control
+        - Reviewer summary for each evidence package
+        - Delivery documentation
+      excluded:
+        - Legal compliance certification or audit sign-off
+        - Penetration testing or security assessment
+        - More than 5 tool integrations without separate scope
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 5000
+      max: 20000
+      currency: USD
+      notes: >
+        Based on observed market rates for GRC automation and compliance tooling
+        from security consultant community discussions and tool pricing comparisons.
+    cost_drivers:
+      - Number of controls in the compliance framework
+      - Integration complexity with evidence source systems
+      - Human review and validation depth
+      - Documentation requirements
+    delivery_process:
+      - Step 1: Compliance framework and evidence source audit
+      - Step 2: Control-to-evidence mapping with compliance stakeholder
+      - Step 3: Integration build for evidence sources
+      - Step 4: Automated collection workflow setup
+      - Step 5: AI labeling and organization workflow build
+      - Step 6: Pilot evidence collection run with human review
+      - Step 7: Documentation and handoff
+    sales_channels:
+      - linkedin_outreach
+      - referrals
+      - security_communities
+    validation_steps:
+      - Identify companies preparing for a SOC 2 or ISO audit in the next 12 months
+      - Map evidence sources manually for one framework section and show automation potential
+      - Measure time reduction versus current manual process
+    risks:
+      - hallucination_liability
+      - data_privacy
+    compliance_notes: >
+      This workflow assists with evidence collection only. It does not provide legal,
+      audit, or compliance certification. All evidence must be reviewed by qualified
+      compliance or legal staff before submission. Data handled must comply with
+      applicable security and privacy requirements.
+    scoring:
+      pain_intensity: 8
+      willingness_to_pay: 8
+      ai_fit: 8
+      buildability: 6
+      market_signal: 7
+      differentiation_potential: 7
+      monetization_potential: 8
+      compliance_risk: 5
+    tags:
+      - b2b
+      - compliance
+      - automation
+      - implementation
+    source: manual_curation
+    status: accepted
