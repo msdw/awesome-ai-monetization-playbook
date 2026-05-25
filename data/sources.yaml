@@ -1,0 +1,28 @@
+sources:
+  upwork:
+    type: marketplace
+    description: Upwork AI service listings for pricing signals
+    url: https://www.upwork.com
+    frequency: weekly
+
+  reddit_entrepreneur:
+    type: reddit
+    subreddit: entrepreneur
+    search: "AI service pricing"
+    frequency: weekly
+
+  indie_hackers:
+    type: web
+    description: Indie Hackers revenue reports for AI products
+    url: https://www.indiehackers.com
+    frequency: weekly
+
+  linkedin:
+    type: social
+    description: LinkedIn posts from AI consultants sharing pricing
+    frequency: weekly
+
+  producthunt:
+    type: producthunt
+    description: Product Hunt AI monetization launches
+    frequency: weekly

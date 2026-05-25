@@ -1,0 +1,28 @@
+resources:
+  - id: company_of_one
+    title: Company of One
+    author: Paul Jarvis
+    type: book
+    description: Why staying small is the next big thing for business
+    relevant_models:
+      - productized_service
+      - consulting_retainer
+
+  - id: expert_secrets
+    title: Expert Secrets
+    author: Russell Brunson
+    type: book
+    description: The underground playbook for creating a mass movement and selling expert advice
+    relevant_models:
+      - training_workshop
+      - done_with_you
+
+  - id: value_based_fees
+    title: Value-Based Fees
+    author: Alan Weiss
+    type: book
+    description: How to charge what you're worth and get it
+    relevant_models:
+      - consulting_retainer
+      - project_fee
+      - value_based

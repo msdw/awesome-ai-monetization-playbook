@@ -1,0 +1,164 @@
+# Curated AI offers — documented service and product packages
+offers:
+  - id: ai_automation_audit
+    title: AI Automation Opportunity Audit
+    summary: >
+      A fixed-scope assessment of a client's business processes to identify
+      the top 3-5 automation opportunities using AI, with an implementation roadmap.
+    monetization_models:
+      - audit_assessment
+    target_buyers:
+      - smb_owner
+      - operations_manager
+    target_users:
+      - operations
+      - consultant
+    industries:
+      - operations
+      - marketing
+    pain_points:
+      - Decision-makers don't know where to start with AI
+      - Fear of investing in the wrong use case
+    value_delivered:
+      - Prioritized list of AI automation opportunities
+      - ROI estimates for top 3 opportunities
+      - Implementation roadmap with effort/cost estimates
+    offer_scope:
+      included:
+        - 2-3 discovery calls with stakeholders
+        - Process mapping of 5-10 key workflows
+        - AI opportunity identification and scoring
+        - Written report with recommendations
+        - 1 follow-up Q&A session
+      excluded:
+        - Implementation
+        - Ongoing support
+        - Software subscriptions
+    technical_stack:
+      - openai_api
+      - python
+    pricing_hypotheses:
+      min: 1500
+      max: 4000
+      currency: USD
+      notes: Observed on Upwork and consultant websites — $1,500-$4,000 range
+    cost_drivers:
+      - Discovery call time (4-6 hours)
+      - Report writing (4-8 hours)
+      - Tool/analysis time (2-4 hours)
+    delivery_process:
+      - Step 1: Intake form + initial discovery call (60 min)
+      - Step 2: Process mapping workshop (90 min)
+      - Step 3: Analysis and report drafting (async, 3-5 days)
+      - Step 4: Report delivery + Q&A call (60 min)
+    sales_channels:
+      - cold_email
+      - linkedin_outreach
+      - referrals
+    validation_steps:
+      - Cold email 20 SMB operations managers
+      - Offer as a free discovery call, upsell to paid audit
+      - Measure conversion from discovery to paid audit
+    risks:
+      - data_privacy
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 7
+      buildability: 9
+      market_signal: 7
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 2
+    tags:
+      - b2b
+      - consulting
+      - one_time
+    source: community
+    status: accepted
+
+  - id: ai_content_production_monthly
+    title: Monthly AI Content Production Service
+    summary: >
+      A done-for-you service that produces 8 SEO blog posts per month for B2B SaaS
+      companies using AI-assisted writing, human editing, and brand voice alignment.
+    monetization_models:
+      - done_for_you
+      - productized_service
+    target_buyers:
+      - marketing_manager
+      - smb_owner
+    target_users:
+      - marketer
+    industries:
+      - marketing
+      - software_dev
+    pain_points:
+      - Content production is expensive and time-consuming
+      - AI-only content lacks brand voice and human expertise
+      - Agencies charge $5k-15k/month for the same output
+    value_delivered:
+      - 8 blog posts per month, 1,500-2,500 words each
+      - SEO-optimized with target keywords
+      - Brand voice alignment after 2-month calibration
+      - Published directly or delivered in Google Docs
+    offer_scope:
+      included:
+        - 8 posts per month
+        - 1 keyword strategy call per month
+        - Human editing and brand voice review
+        - Publishing or delivery in Google Docs
+      excluded:
+        - Graphic design
+        - Social media distribution
+        - Video content
+    technical_stack:
+      - openai_api
+      - anthropic_api
+      - python
+    pricing_hypotheses:
+      min: 1500
+      max: 3500
+      currency: USD
+      notes: >
+        Observed range for AI-assisted content production services on LinkedIn and
+        consultant websites. Human-only agencies charge 3-5x more.
+    cost_drivers:
+      - LLM API costs (~$30-80/month for 8 posts)
+      - Human editing time (8-16 hours/month)
+      - Client communication (2-4 hours/month)
+    delivery_process:
+      - Step 1: Onboarding call — brand voice, audience, keyword targets
+      - Step 2: Monthly content calendar approval
+      - Step 3: Draft generation and human editing (async)
+      - Step 4: Client review and revision round
+      - Step 5: Final delivery or publishing
+    sales_channels:
+      - linkedin_outreach
+      - cold_email
+      - referrals
+    validation_steps:
+      - Post LinkedIn content about AI-assisted writing, measure DMs
+      - Offer first post free, charge for month 2
+      - Measure client retention after month 3
+    risks:
+      - commoditization
+      - key_person
+    compliance_notes: null
+    scoring:
+      pain_intensity: 7
+      willingness_to_pay: 7
+      ai_fit: 8
+      buildability: 8
+      market_signal: 8
+      differentiation_potential: 5
+      monetization_potential: 7
+      compliance_risk: 1
+    tags:
+      - b2b
+      - recurring
+      - marketing_ai
+      - agency
+    source: community
+    status: accepted

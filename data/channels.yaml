@@ -1,0 +1,71 @@
+channels:
+  - id: cold_email
+    label: Cold Email
+    type: outbound
+    best_for:
+      - B2B high-ticket offers ($2k+/month)
+      - Consulting and DFY services
+    effort: medium
+    time_to_first_client: "2-6 weeks"
+
+  - id: linkedin_outreach
+    label: LinkedIn Outreach
+    type: outbound
+    best_for:
+      - B2B professional services
+      - Training and consulting
+    effort: medium
+    time_to_first_client: "2-8 weeks"
+
+  - id: content_seo
+    label: Content Marketing / SEO
+    type: inbound
+    best_for:
+      - SaaS products with search demand
+      - Long-term organic growth
+    effort: high
+    time_to_first_client: "3-12 months"
+
+  - id: upwork_fiverr
+    label: Upwork / Fiverr
+    type: marketplace
+    best_for:
+      - Early-stage freelancers building portfolio
+      - Project-based services under $5k
+    effort: medium
+    time_to_first_client: "1-4 weeks"
+
+  - id: community
+    label: Community (Reddit, Slack, Discord)
+    type: inbound
+    best_for:
+      - Developer tools
+      - Niche B2B products
+    effort: medium
+    time_to_first_client: "2-6 weeks"
+
+  - id: product_hunt
+    label: Product Hunt
+    type: launch
+    best_for:
+      - B2C consumer AI tools
+      - Developer tools
+    effort: high
+    time_to_first_client: "Launch day"
+
+  - id: referrals
+    label: Referrals / Word of Mouth
+    type: inbound
+    best_for:
+      - High-touch services with satisfied clients
+    effort: low
+    time_to_first_client: "Variable"
+
+  - id: partnerships
+    label: Partnerships / Integrations
+    type: partnership
+    best_for:
+      - Products with natural adjacent tools
+      - White-label and reseller models
+    effort: high
+    time_to_first_client: "3-12 months"

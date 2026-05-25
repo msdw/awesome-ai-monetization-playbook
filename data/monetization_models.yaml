@@ -1,0 +1,277 @@
+# 17 monetization models for AI businesses
+monetization_models:
+  - id: subscription_saas
+    label: Subscription SaaS
+    description: Recurring monthly or annual subscription for software access
+    best_for:
+      - Product with ongoing usage
+      - Clear recurring value delivery
+    examples:
+      - AI writing assistant at $29/month
+      - AI analytics dashboard at $99/month
+    typical_price_range: "$29 – $499/month"
+    pros:
+      - Predictable revenue
+      - Scales without proportional cost increase
+    cons:
+      - Requires retention — churn kills growth
+      - Hard to close without free trial or freemium
+
+  - id: usage_based_api
+    label: Usage-based API
+    description: Pay-per-call, per-token, or per-document pricing
+    best_for:
+      - API products with variable usage
+      - Developer tools
+    examples:
+      - AI translation API at $0.05/1000 characters
+      - OCR API at $0.01/page
+    typical_price_range: "$0.001 – $0.10/unit"
+    pros:
+      - Aligns cost with value
+      - Low barrier to try
+    cons:
+      - Revenue is unpredictable
+      - Requires metering and billing infrastructure
+
+  - id: freemium
+    label: Freemium
+    description: Free tier with limits, paid tier for more usage or features
+    best_for:
+      - Consumer or developer tools with network effects
+      - Products where usage creates habit
+    examples:
+      - 100 requests/month free, $19/month for unlimited
+    pros:
+      - Lower acquisition friction
+      - Can build large user base fast
+    cons:
+      - Conversion to paid is typically 2-5%
+      - Free users cost money to support
+
+  - id: consulting_retainer
+    label: Consulting Retainer
+    description: Monthly retainer for ongoing AI consulting or advisory services
+    best_for:
+      - High-trust, ongoing client relationships
+      - Strategic AI advisory
+    examples:
+      - AI strategy retainer at $3k-8k/month
+      - Ongoing AI implementation support at $5k/month
+    typical_price_range: "$2,000 – $15,000/month"
+    pros:
+      - Predictable revenue without a product
+      - High margins
+    cons:
+      - Scales with time — revenue ceiling
+      - Requires strong credibility to close
+
+  - id: project_fee
+    label: Project Fee
+    description: Fixed price for a defined, scoped project
+    best_for:
+      - New client relationships
+      - Well-defined, bounded deliverables
+    examples:
+      - AI chatbot implementation for $8k-25k
+      - RAG system build for $15k-40k
+    typical_price_range: "$3,000 – $50,000/project"
+    pros:
+      - Fast to close
+      - No ongoing delivery obligation
+    cons:
+      - Lumpy revenue
+      - Scope creep risk
+
+  - id: productized_service
+    label: Productized Service
+    description: Fixed scope, fixed price service delivered repeatedly to multiple clients
+    best_for:
+      - Services that can be systematized
+      - Building toward a product
+    examples:
+      - AI automation audit at $1,500
+      - Monthly AI content package at $2,500/month
+    typical_price_range: "$500 – $5,000/unit or /month"
+    pros:
+      - Predictable delivery process
+      - Easier to market and close than custom projects
+    cons:
+      - Still requires delivery time
+      - Hard to scale beyond 3-5 concurrent clients
+
+  - id: done_for_you
+    label: Done-for-You (DFY)
+    description: Full delivery of AI implementation on behalf of the client
+    best_for:
+      - Clients who want results, not skills transfer
+      - Ongoing AI operations
+    examples:
+      - Monthly AI content production at $3k-8k/month
+      - AI-powered data enrichment service at $2k/month
+    typical_price_range: "$1,500 – $10,000/month"
+    pros:
+      - High perceived value
+      - Recurring revenue possible
+    cons:
+      - Operationally intensive
+      - Dependent on key person
+
+  - id: done_with_you
+    label: Done-with-You (DWY)
+    description: Collaborative implementation with client team involvement
+    best_for:
+      - Clients who want to own the capability after
+      - Training-heavy implementations
+    examples:
+      - 8-week AI implementation program at $8k-15k
+    typical_price_range: "$5,000 – $20,000/engagement"
+    pros:
+      - Higher client satisfaction and retention
+      - Knowledge transfer reduces ongoing support
+    cons:
+      - Requires scheduling and coordination
+
+  - id: training_workshop
+    label: Training & Workshop
+    description: Live or recorded training, cohort programs, or workshops
+    best_for:
+      - AI skills training for teams
+      - Packaged knowledge delivery
+    examples:
+      - AI for marketers workshop at $500-2k/person
+      - Corporate AI training day at $5k-15k
+    typical_price_range: "$200 – $15,000/session or /person"
+    pros:
+      - High leverage — same content to many
+      - Can be recorded and sold async
+    cons:
+      - Commoditizing fast
+      - Hard to stand out without strong reputation
+
+  - id: licensing
+    label: Licensing
+    description: License to use a model, workflow, prompt system, or IP
+    best_for:
+      - Proprietary fine-tuned models
+      - Workflow systems sold to other builders
+    examples:
+      - White-label AI chatbot system at $500-2k/month
+    typical_price_range: "$500 – $5,000/month"
+    pros:
+      - Passive-ish revenue once built
+      - Scales to many licensees
+    cons:
+      - Hard to enforce
+      - Buyers need trust to license
+
+  - id: marketplace_listing
+    label: Marketplace Listing
+    description: Product or service listed on a third-party platform
+    best_for:
+      - Services that buyers search for on Upwork, Fiverr, Clutch
+      - Products available on GPT Store, HubSpot App, etc.
+    examples:
+      - AI automation service listed on Upwork at $75-150/hour
+      - Custom GPT on the GPT Store
+    typical_price_range: "$10 – $500/project or per listing"
+    pros:
+      - Existing buyer intent on platforms
+      - No marketing required to get found
+    cons:
+      - Race to bottom on price
+      - Platform dependency
+
+  - id: revenue_share
+    label: Revenue Share
+    description: Fee based on percentage of value or revenue generated for client
+    best_for:
+      - High-confidence AI revenue generation services
+      - Lead generation or sales automation
+    examples:
+      - AI lead generation at 10-20% of closed deals
+    typical_price_range: "5% – 25% of revenue generated"
+    pros:
+      - Aligns incentives
+      - No upfront cost for client
+    cons:
+      - Hard to track and verify
+      - High risk for service provider
+
+  - id: audit_assessment
+    label: Audit & Assessment
+    description: One-time diagnostic report delivered as a fixed-price service
+    best_for:
+      - Entry offer into consulting relationships
+      - Organizations exploring AI readiness
+    examples:
+      - AI readiness audit at $1,500-3,500
+      - Automation opportunity assessment at $2,500
+    typical_price_range: "$500 – $5,000"
+    pros:
+      - Easy to define and sell
+      - Fast to deliver
+      - Natural upsell to implementation
+    cons:
+      - One-time revenue
+      - Some clients take the report and go elsewhere
+
+  - id: platform_fee
+    label: Platform Fee
+    description: Transaction or usage fee on activity through a multi-sided platform
+    best_for:
+      - AI-powered marketplaces or matching platforms
+    examples:
+      - 10-15% fee on transactions through an AI talent marketplace
+    typical_price_range: "5% – 30% of transaction value"
+    pros:
+      - Scales with platform activity
+    cons:
+      - Requires two-sided market to work
+      - High acquisition cost
+
+  - id: data_product
+    label: Data Product
+    description: Selling structured AI-processed data as a standalone product
+    best_for:
+      - Teams with unique data access or processing capability
+    examples:
+      - AI-processed real estate market data at $299/month
+      - Enriched B2B contact data at $0.05/contact
+    typical_price_range: "$0.01 – $1.00/record or $50 – $500/month"
+    pros:
+      - Scales without proportional delivery cost
+      - High margins once pipeline is built
+    cons:
+      - Data quality and freshness are constant challenges
+      - Legal and privacy compliance required
+
+  - id: embedded_ai
+    label: Embedded AI Feature
+    description: AI capability embedded into an existing non-AI product as an upsell
+    best_for:
+      - Adding AI to an existing product with paying users
+    examples:
+      - AI summarization feature added to a note-taking app at $10/month extra
+    typical_price_range: "$5 – $50/month add-on"
+    pros:
+      - Existing customer base to upsell
+      - Lower acquisition cost
+    cons:
+      - Requires existing product with users
+
+  - id: white_label
+    label: White-label / OEM
+    description: AI product or service sold under another company's brand
+    best_for:
+      - Established AI products with proven demand
+      - Agencies and SaaS companies looking for AI capabilities
+    examples:
+      - White-label AI chatbot platform at $500-2k/month per client
+    typical_price_range: "$500 – $5,000/month per reseller"
+    pros:
+      - Access to existing customer relationships of partners
+      - Revenue without direct sales effort
+    cons:
+      - Limited brand building
+      - Partner dependency

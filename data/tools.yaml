@@ -1,0 +1,36 @@
+tools:
+  - id: stripe
+    name: Stripe
+    url: https://stripe.com
+    category: payments
+    description: Payment processing for subscriptions and one-time payments
+
+  - id: lemonsqueezy
+    name: Lemon Squeezy
+    url: https://lemonsqueezy.com
+    category: payments
+    description: Merchant of record for indie builders — handles VAT globally
+
+  - id: paddle
+    name: Paddle
+    url: https://paddle.com
+    category: payments
+    description: Merchant of record with subscription management
+
+  - id: cal_com
+    name: Cal.com
+    url: https://cal.com
+    category: scheduling
+    description: Open-source scheduling for service-based offers
+
+  - id: bonsai
+    name: Bonsai
+    url: https://hellobonsai.com
+    category: contracts
+    description: Contracts, invoicing, and time tracking for freelancers
+
+  - id: notion
+    name: Notion
+    url: https://notion.so
+    category: delivery
+    description: Client portals and project delivery in Notion

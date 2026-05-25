@@ -1,0 +1,49 @@
+delivery_models:
+  - id: async_software
+    label: Async Software (SaaS / API)
+    description: Client self-serves via software interface
+    margin: very_high
+    scalability: very_high
+    human_time_per_client: none
+
+  - id: async_content
+    label: Async Content / Course
+    description: Recorded training or written deliverables sent async
+    margin: high
+    scalability: high
+    human_time_per_client: minimal
+
+  - id: sync_workshop
+    label: Sync Workshop / Training
+    description: Live session delivered to one or multiple clients
+    margin: medium
+    scalability: medium
+    human_time_per_client: "2-8 hours/session"
+
+  - id: retainer_advisory
+    label: Retainer Advisory
+    description: Ongoing availability and guidance via async or sync communication
+    margin: high
+    scalability: low
+    human_time_per_client: "4-20 hours/month"
+
+  - id: project_delivery
+    label: Project Delivery
+    description: Defined deliverable produced over a fixed timeline
+    margin: medium
+    scalability: low
+    human_time_per_client: "20-200 hours/project"
+
+  - id: managed_service
+    label: Managed Service (DFY)
+    description: Ongoing AI operations performed on behalf of client
+    margin: medium
+    scalability: low
+    human_time_per_client: "10-40 hours/month"
+
+  - id: hybrid
+    label: Hybrid (Software + Service)
+    description: Software product supplemented by human support or delivery
+    margin: medium
+    scalability: medium
+    human_time_per_client: "2-10 hours/month"

@@ -1,0 +1,121 @@
+# Types of AI offer buyers
+buyers:
+  - id: smb_owner
+    label: SMB Owner
+    description: Owner/founder of a 1-50 person business
+    typical_budget: "$500 – $5,000/month"
+    buying_behavior: Pragmatic, results-focused, short sales cycle
+
+  - id: marketing_manager
+    label: Marketing Manager
+    description: B2B or B2C marketing team lead
+    typical_budget: "$500 – $5,000/month"
+    buying_behavior: ROI-focused, looks for proven tools
+
+  - id: sales_manager
+    label: Sales Manager
+    description: Sales team lead or VP Sales
+    typical_budget: "$1,000 – $10,000/month"
+    buying_behavior: Commission-driven, needs quota impact
+
+  - id: operations_manager
+    label: Operations Manager
+    description: Head of ops, COO, or process owner
+    typical_budget: "$1,000 – $8,000/month"
+    buying_behavior: Efficiency-focused, cautious about change
+
+  - id: hr_manager
+    label: HR Manager / People Ops
+    description: HR lead or people operations manager
+    typical_budget: "$500 – $3,000/month"
+    buying_behavior: Compliance-aware, risk-averse
+
+  - id: product_manager
+    label: Product Manager
+    description: PM or head of product at a tech company
+    typical_budget: "$500 – $5,000/month"
+    buying_behavior: Data-driven, user-obsessed
+
+  - id: cto_tech_lead
+    label: CTO / Tech Lead
+    description: Technical decision-maker at a startup or SMB
+    typical_budget: "$1,000 – $20,000/month"
+    buying_behavior: Technical scrutiny, build-vs-buy mindset
+
+  - id: agency_owner
+    label: Agency Owner
+    description: Owner of a marketing, dev, or consulting agency
+    typical_budget: "$1,000 – $10,000/month"
+    buying_behavior: White-label and scalability focused
+
+  - id: consultant_freelancer
+    label: Consultant / Freelancer
+    description: Independent consultant or high-end freelancer
+    typical_budget: "$100 – $2,000/month"
+    buying_behavior: Tool-focused, high cost-sensitivity
+
+  - id: enterprise_innovation
+    label: Enterprise Innovation Team
+    description: R&D or innovation team at a large company
+    typical_budget: "$10,000 – $100,000/month"
+    buying_behavior: Long procurement cycles, risk committees
+
+  - id: ecommerce_owner
+    label: E-commerce Owner
+    description: Owner of a DTC or B2B e-commerce business
+    typical_budget: "$500 – $5,000/month"
+    buying_behavior: Revenue-focused, quick to try new tools
+
+  - id: content_creator
+    label: Content Creator / Publisher
+    description: Individual or team producing online content
+    typical_budget: "$50 – $500/month"
+    buying_behavior: Tool-heavy, cost-sensitive, influencer-driven
+
+  - id: legal_professional
+    label: Legal Professional
+    description: Lawyer, paralegal, or legal ops manager
+    typical_budget: "$500 – $5,000/month"
+    buying_behavior: Risk-averse, compliance-first, slow to adopt
+
+  - id: finance_professional
+    label: Finance / Accounting Professional
+    description: CFO, controller, or finance team
+    typical_budget: "$500 – $5,000/month"
+    buying_behavior: Accuracy-obsessed, compliance-aware
+
+  - id: research_analyst
+    label: Research Analyst
+    description: Market research, competitive intelligence, or academic researcher
+    typical_budget: "$200 – $3,000/month"
+    buying_behavior: Data quality-focused
+
+  - id: recruiter
+    label: Recruiter / Talent Acquisition
+    description: In-house recruiter or recruitment agency
+    typical_budget: "$200 – $2,000/month"
+    buying_behavior: Volume-focused, time-savings obsessed
+
+  - id: real_estate_agent
+    label: Real Estate Agent / Broker
+    description: Licensed real estate professional
+    typical_budget: "$100 – $1,000/month"
+    buying_behavior: Commission-driven, relationship-focused
+
+  - id: healthcare_admin
+    label: Healthcare Administrator
+    description: Hospital admin, clinic manager, or health tech buyer
+    typical_budget: "$1,000 – $20,000/month"
+    buying_behavior: Compliance-first, long procurement cycle
+
+  - id: educator_coach
+    label: Educator / Coach
+    description: Teacher, corporate trainer, or executive coach
+    typical_budget: "$50 – $500/month"
+    buying_behavior: Outcome-focused, community-driven
+
+  - id: developer_builder
+    label: Developer / Indie Builder
+    description: Technical builder creating AI tools and products
+    typical_budget: "$20 – $500/month"
+    buying_behavior: API-focused, tries before buying

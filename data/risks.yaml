@@ -1,0 +1,42 @@
+risks:
+  - id: api_price_increase
+    label: LLM API price increase
+    category: technical
+    description: Core LLM provider raises prices, destroying unit economics
+    mitigation: Build multi-provider compatibility; monitor cost per request
+
+  - id: api_terms_change
+    label: LLM provider terms change
+    category: technical
+    description: Provider restricts use cases, adds requirements, or shuts down
+    mitigation: Avoid single-provider lock-in; test with open-source alternatives
+
+  - id: commoditization
+    label: Feature commoditization
+    category: market
+    description: Core AI capability becomes available for free in existing tools
+    mitigation: Build distribution and brand moats; focus on niche depth
+
+  - id: hallucination_liability
+    label: AI output liability
+    category: compliance
+    description: AI produces incorrect output in high-stakes domain causing harm
+    mitigation: Human review gates; clear disclaimers; avoid regulated domain without compliance
+
+  - id: data_privacy
+    label: Client data privacy violation
+    category: compliance
+    description: Client data sent to third-party LLM without proper consent
+    mitigation: Data processing agreements; on-premise options for sensitive clients
+
+  - id: key_person
+    label: Key person dependency
+    category: operational
+    description: Revenue depends on one person's time and expertise
+    mitigation: Document processes; build async delivery systems; hire/subcontract
+
+  - id: churn
+    label: High subscription churn
+    category: market
+    description: Users cancel because perceived value does not justify recurring cost
+    mitigation: Measure and improve retention before scaling acquisition

@@ -1,0 +1,61 @@
+pricing_patterns:
+  - id: flat_monthly
+    label: Flat Monthly
+    description: One price per month regardless of usage
+    best_for:
+      - SaaS with consistent usage patterns
+    examples:
+      - $49/month for AI writing assistant
+      - $299/month for AI analytics tool
+    pros:
+      - Simple to understand and invoice
+    cons:
+      - Heavy users get a bargain; light users churn
+
+  - id: tiered_seats
+    label: Tiered (by seats)
+    description: Price scales with number of users
+    best_for:
+      - Team products sold to companies
+    examples:
+      - $49/month (1 user), $99/month (5 users), $299/month (25 users)
+    pros:
+      - Natural expansion revenue as team grows
+    cons:
+      - Seat sharing is common
+
+  - id: usage_based
+    label: Usage-based
+    description: Price scales with consumption (tokens, documents, API calls)
+    best_for:
+      - API products, variable usage scenarios
+    examples:
+      - $0.05 per document processed
+    pros:
+      - Fair — users pay for what they use
+    cons:
+      - Unpredictable revenue
+
+  - id: value_based
+    label: Value-based Pricing
+    description: Price anchored to measurable value delivered, not cost
+    best_for:
+      - High-value consulting, DFY services
+    examples:
+      - "If we save you 20 hours/month at $150/hour, we charge $1,500/month"
+    pros:
+      - Higher prices justified by ROI
+    cons:
+      - Harder to quantify and communicate
+
+  - id: project_tier
+    label: Project Tiers (Good / Better / Best)
+    description: Three packages at increasing scope and price
+    best_for:
+      - Consulting and project-based services
+    examples:
+      - Starter $3k / Standard $8k / Premium $15k
+    pros:
+      - Anchoring effect — middle tier sells most
+    cons:
+      - Requires clear differentiation between tiers
