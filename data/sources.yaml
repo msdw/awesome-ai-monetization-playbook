@@ -1,28 +1,106 @@
+# Sources used for automated monetization & pricing discovery
+# Fields:
+#   type: github | hn | reddit | producthunt | web | newsletter
+#   status: active | candidate | paused
+#   search_query: used directly in GitHub/HN API calls
+#   url: for web type sources
+#   frequency: daily | weekly
+#   added_at: ISO date
 sources:
-  upwork:
-    type: marketplace
-    description: Upwork AI service listings for pricing signals
-    url: https://www.upwork.com
+  github_saas_pricing:
+    type: github
+    description: GitHub repos — SaaS pricing models and strategies
+    search_query: "saas pricing OR pricing model OR subscription revenue ai"
+    frequency: daily
+    status: active
+    added_at: "2026-05-01"
+
+  github_ai_monetization:
+    type: github
+    description: GitHub repos — AI monetization patterns and tools
+    search_query: "ai monetization OR llm api pricing OR ai revenue model"
+    frequency: daily
+    status: active
+    added_at: "2026-05-26"
+
+  github_awesome_pricing:
+    type: github
+    description: Awesome pricing and monetization lists
+    search_query: "awesome pricing OR awesome saas metrics OR awesome monetization"
     frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  hn_show_saas:
+    type: hn
+    description: Hacker News Show HN — SaaS and pricing discussions
+    search_query: "Show HN SaaS pricing"
+    frequency: daily
+    status: active
+    added_at: "2026-05-01"
+
+  hn_ask_pricing:
+    type: hn
+    description: HN Ask HN — pricing strategies
+    search_query: "Ask HN pricing strategy AI"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-26"
 
   reddit_entrepreneur:
     type: reddit
+    description: r/entrepreneur — AI service pricing discussions
     subreddit: entrepreneur
-    search: "AI service pricing"
+    url: "https://www.reddit.com/r/entrepreneur/search/?q=AI+pricing&sort=new"
     frequency: weekly
+    status: active
+    added_at: "2026-05-01"
+
+  reddit_saas:
+    type: reddit
+    description: r/SaaS — pricing and monetization threads
+    subreddit: SaaS
+    url: "https://www.reddit.com/r/SaaS/search/?q=pricing&sort=new"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-26"
+
+  upwork:
+    type: web
+    description: Upwork AI service listings for market pricing signals
+    url: "https://www.upwork.com/search/profiles/?q=AI%20consultant&sort=recency"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-01"
 
   indie_hackers:
     type: web
-    description: Indie Hackers revenue reports for AI products
-    url: https://www.indiehackers.com
+    description: Indie Hackers revenue milestones for AI products
+    url: "https://www.indiehackers.com/products?sorting=newest"
     frequency: weekly
+    status: active
+    added_at: "2026-05-01"
 
-  linkedin:
-    type: social
-    description: LinkedIn posts from AI consultants sharing pricing
+  priceintelligently:
+    type: web
+    description: Price Intelligently blog — SaaS pricing research
+    url: "https://www.priceintelligently.com/blog"
     frequency: weekly
+    status: active
+    added_at: "2026-05-26"
 
   producthunt:
     type: producthunt
-    description: Product Hunt AI monetization launches
+    description: Product Hunt AI launches and pricing
+    url: "https://www.producthunt.com/topics/artificial-intelligence"
     frequency: weekly
+    status: active
+    added_at: "2026-05-01"
+
+  linkedin_ai_pricing:
+    type: social
+    description: LinkedIn posts from AI consultants sharing pricing benchmarks
+    search_query: "AI consulting pricing 2025"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-01"
