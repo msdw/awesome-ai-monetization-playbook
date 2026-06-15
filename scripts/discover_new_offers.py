@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Discover new AI offer candidates from public sources."""
+import os
 import sys
 import json
 import argparse
@@ -13,11 +14,15 @@ DATA = ROOT / "data"
 
 HN_SEARCH_API = "https://hn.algolia.com/api/v1"
 GITHUB_API = "https://api.github.com"
+_GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
 
 
 def fetch_json(url):
+    headers = {"User-Agent": "awesome-ai-monetization/1.0"}
+    if _GITHUB_TOKEN:
+        headers["Authorization"] = f"token {_GITHUB_TOKEN}"
     try:
-        req = Request(url, headers={"User-Agent": "awesome-ai-monetization/1.0"})
+        req = Request(url, headers=headers)
         with urlopen(req, timeout=15) as resp:
             return json.loads(resp.read().decode("utf-8"))
     except Exception as e:

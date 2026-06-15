@@ -1,106 +1,122 @@
-# Sources used for automated monetization & pricing discovery
-# Fields:
-#   type: github | hn | reddit | producthunt | web | newsletter
-#   status: active | candidate | paused
-#   search_query: used directly in GitHub/HN API calls
-#   url: for web type sources
-#   frequency: daily | weekly
-#   added_at: ISO date
+# Sources for automated AI monetization & pricing discovery
+# discover_new_offers.py reads github/hn type sources with search_query.
+# Web sources are for manual review.
+#
+# Status: active | paused | candidate
+# Frequency: daily | weekly
+
 sources:
-  github_saas_pricing:
+
+  # ── GitHub API searches ───────────────────────────────────────────────────────
+
+  github_saas_pricing_tools:
     type: github
-    description: GitHub repos — SaaS pricing models and strategies
-    search_query: "saas pricing OR pricing model OR subscription revenue ai"
+    description: SaaS pricing tools, billing libraries, and revenue stack
+    search_query: "saas pricing OR subscription billing OR revenue model language:python stars:>40"
     frequency: daily
     status: active
     added_at: "2026-05-01"
 
   github_ai_monetization:
     type: github
-    description: GitHub repos — AI monetization patterns and tools
-    search_query: "ai monetization OR llm api pricing OR ai revenue model"
+    description: AI monetization patterns and API-based revenue models
+    search_query: "ai monetization OR llm api billing OR ai credits system stars:>20"
     frequency: daily
     status: active
     added_at: "2026-05-26"
 
-  github_awesome_pricing:
+  github_productized_services:
     type: github
-    description: Awesome pricing and monetization lists
-    search_query: "awesome pricing OR awesome saas metrics OR awesome monetization"
+    description: Productized service templates and offer frameworks
+    search_query: "productized service OR service as a product OR consulting template ai"
+    frequency: weekly
+    status: active
+    added_at: "2026-06-01"
+
+  github_awesome_saas_metrics:
+    type: github
+    description: Awesome SaaS metrics, pricing, and revenue lists
+    search_query: "awesome saas metrics OR awesome pricing OR awesome revenue growth"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
 
-  hn_show_saas:
+  # ── Hacker News ───────────────────────────────────────────────────────────────
+
+  hn_pricing_discussions:
     type: hn
-    description: Hacker News Show HN — SaaS and pricing discussions
+    description: HN threads on AI pricing strategy and willingness to pay
+    search_query: "AI pricing strategy willingness to pay"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-01"
+    notes: Pricing discussions reveal real market constraints
+
+  hn_show_saas_pricing:
+    type: hn
+    description: Show HN — SaaS products with visible pricing models
     search_query: "Show HN SaaS pricing"
     frequency: daily
     status: active
-    added_at: "2026-05-01"
+    added_at: "2026-06-01"
 
-  hn_ask_pricing:
+  hn_ask_monetize_ai:
     type: hn
-    description: HN Ask HN — pricing strategies
-    search_query: "Ask HN pricing strategy AI"
+    description: Ask HN — how to monetize AI products
+    search_query: "Ask HN monetize AI product revenue"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
 
-  reddit_entrepreneur:
-    type: reddit
-    description: r/entrepreneur — AI service pricing discussions
-    subreddit: entrepreneur
-    url: "https://www.reddit.com/r/entrepreneur/search/?q=AI+pricing&sort=new"
+  hn_freelance_ai:
+    type: hn
+    description: HN threads on AI consulting and service pricing
+    search_query: "AI consulting offer pricing freelance"
     frequency: weekly
     status: active
     added_at: "2026-05-01"
 
-  reddit_saas:
-    type: reddit
-    description: r/SaaS — pricing and monetization threads
-    subreddit: SaaS
-    url: "https://www.reddit.com/r/SaaS/search/?q=pricing&sort=new"
+  # ── Web sources (manual review) ───────────────────────────────────────────────
+
+  indie_hackers_revenue:
+    type: web
+    description: Indie Hackers revenue milestones — validated pricing data points
+    url: "https://www.indiehackers.com/products?sorting=revenue"
+    frequency: weekly
+    status: active
+    added_at: "2026-05-01"
+    notes: Best concrete pricing benchmarks for AI micro-products
+
+  priceintelligently_blog:
+    type: web
+    description: Paddle / Price Intelligently — SaaS pricing research and data
+    url: "https://www.paddle.com/resources/saas-pricing"
     frequency: weekly
     status: active
     added_at: "2026-05-26"
 
-  upwork:
+  openview_plg:
     type: web
-    description: Upwork AI service listings for market pricing signals
-    url: "https://www.upwork.com/search/profiles/?q=AI%20consultant&sort=recency"
+    description: OpenView Partners — product-led growth and pricing strategies
+    url: "https://openviewpartners.com/blog/"
     frequency: weekly
     status: active
-    added_at: "2026-05-01"
+    added_at: "2026-06-01"
 
-  indie_hackers:
+  upwork_ai_rates:
     type: web
-    description: Indie Hackers revenue milestones for AI products
-    url: "https://www.indiehackers.com/products?sorting=newest"
+    description: Upwork AI freelance listings — market rate benchmarks
+    url: "https://www.upwork.com/search/profiles/?q=AI+automation&sort=recency"
     frequency: weekly
-    status: active
+    status: paused
     added_at: "2026-05-01"
-
-  priceintelligently:
-    type: web
-    description: Price Intelligently blog — SaaS pricing research
-    url: "https://www.priceintelligently.com/blog"
-    frequency: weekly
-    status: active
-    added_at: "2026-05-26"
-
-  producthunt:
-    type: producthunt
-    description: Product Hunt AI launches and pricing
-    url: "https://www.producthunt.com/topics/artificial-intelligence"
-    frequency: weekly
-    status: active
-    added_at: "2026-05-01"
+    notes: Paused — requires manual scraping; check monthly for rate benchmarks
 
   linkedin_ai_pricing:
     type: social
-    description: LinkedIn posts from AI consultants sharing pricing benchmarks
-    search_query: "AI consulting pricing 2025"
+    description: LinkedIn posts from AI consultants sharing real pricing
+    search_query: "AI consulting pricing 2025 2026"
     frequency: weekly
-    status: active
+    status: paused
     added_at: "2026-05-01"
+    notes: Paused — no automated access; review manually once a month
