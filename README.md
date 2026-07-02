@@ -10,9 +10,26 @@ How to turn AI skills and tools into income — structured, practical, and witho
 
 ---
 
+## Awesome AI Builder Series
+
+| 💡 Idea Engine | 🚀 Venture Playbook | 🏗 Business Blueprint | 💰 Monetization Playbook |
+|:---:|:---:|:---:|:---:|
+| [Find your AI idea →](https://github.com/msdw/awesome-ai-idea-engine) | [Turn ideas into ventures →](https://github.com/msdw/awesome-ai-venture-playbook) | [Build your AI business →](https://github.com/msdw/awesome-ai-business-blueprint) | **You are here** |
+
+---
+
 ## Sponsored — Project of the Week
 
 > *This slot is available. [Learn how to sponsor →](SPONSORS.md)*
+
+---
+
+## Who This Is For
+
+Built for:
+- **AI freelancers & consultants** — looking to structure and price their AI services professionally
+- **Builders going commercial** — turning a side project or open-source tool into revenue
+- **Agencies adding AI** — defining monetization models and pricing for new AI service lines
 
 ---
 
@@ -51,6 +68,22 @@ Every offer is a hypothesis. Pricing signals are observations from public source
 
 ---
 
+## Recommended Tools
+
+Tools used and recommended by AI consultants and builders in this community:
+
+| Tool | What it's for |
+|---|---|
+| [Stripe](https://stripe.com) | Payment infrastructure — subscriptions, one-time payments, invoicing |
+| [Lemon Squeezy](https://www.lemonsqueezy.com) | Merchant of record for SaaS — handles tax and compliance globally |
+| [Cal.com](https://cal.com) | Open-source booking — discovery calls, onboarding, check-ins |
+| [Tally](https://tally.so) | Free forms for lead capture, discovery questionnaires, proposals |
+| [Notion](https://www.notion.so) | Client proposals, delivery docs, and offer documentation |
+
+> Want your tool featured here? [See sponsorship options →](SPONSORS.md)
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to suggest an offer, pricing signal, or resource.
@@ -62,6 +95,19 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to suggest an offer, pricing sign
 ## Automated Updates
 
 Every Monday at 07:00 UTC, a GitHub Actions workflow discovers new AI offer and pricing signals from public sources and opens a pull request for human review.
+
+---
+
+## Work With Me
+
+These resources are free. If you want hands-on support applying them to your specific situation:
+
+| | |
+|---|---|
+| **Discovery Call** | 30-min conversation to map your monetization opportunity — [book a call →](mailto:mathurin.ache@advanthink.com?subject=Discovery%20Call%20from%20Awesome%20AI%20Monetization%20Playbook) |
+| **Coaching** | 1:1 guidance to design and price your AI offer — [get in touch →](mailto:mathurin.ache@advanthink.com?subject=Coaching%20from%20Awesome%20AI%20Monetization%20Playbook) |
+| **Consulting** | Hands-on help to build your AI service business — [let's talk →](mailto:mathurin.ache@advanthink.com?subject=Consulting%20from%20Awesome%20AI%20Monetization%20Playbook) |
+| **Training** | Workshops on AI monetization for freelancers and teams — [learn more →](mailto:mathurin.ache@advanthink.com?subject=Training%20from%20Awesome%20AI%20Monetization%20Playbook) |
 
 ---
 
