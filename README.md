@@ -16,7 +16,7 @@ How to turn AI skills and tools into income — structured, practical, and witho
 |:---:|:---:|:---:|:---:|
 | [Find your AI idea →](https://github.com/msdw/awesome-ai-idea-engine) | [Turn ideas into ventures →](https://github.com/msdw/awesome-ai-venture-playbook) | [Build your AI business →](https://github.com/msdw/awesome-ai-business-blueprint) | **You are here** |
 
-<p align="center"><a href="https://msdw.github.io/awesome-ai-hub/">🔗 See the full series & get weekly updates →</a></p>
+<p align="center"><a href="https://msdw.github.io/awesome-ai-hub/">🔗 See the full series & get weekly updates →</a> · <a href="WEEKLY.md">📅 This week's finds</a> · <a href="TOP10.md">🏆 Top 10</a></p>
 
 ---
 
