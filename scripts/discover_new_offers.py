@@ -56,7 +56,9 @@ def load_active_sources() -> dict:
 def discover_from_github(mode):
     print("\n[GitHub] Searching AI monetization repos...")
     candidates = []
-    days = 7 if mode == "weekly" else 1
+    # GitHub creation window: a repo almost never clears the star threshold
+    # within 7 days of being created, so a 7-day window returned nothing at all.
+    days = 30 if mode == "weekly" else 7
     since = (datetime.datetime.utcnow() - datetime.timedelta(days=days)).strftime("%Y-%m-%d")
 
     active = load_active_sources()
@@ -193,9 +195,12 @@ def save_candidates(candidates, dry_run):
     if not new:
         print("All candidates already exist")
         return
-    data.setdefault("offers", []).extend(new)
-    with open(path, "w", encoding="utf-8") as f:
-        yaml.dump(data, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
+    # Append only — never rewrite the whole file, so the hand-written comments,
+    # block scalars and flow-style lists of curated entries survive intact.
+    dumped = yaml.dump(new, allow_unicode=True, default_flow_style=False, sort_keys=False)
+    indented = "".join(f"  {line}\n" if line.strip() else "\n" for line in dumped.splitlines())
+    with open(path, "a", encoding="utf-8") as f:
+        f.write("\n" + indented)
     print(f"Added {len(new)} new candidates")
 
 

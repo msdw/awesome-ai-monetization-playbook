@@ -49,7 +49,7 @@ A structured monetization reference for AI builders. It covers:
 ## What This Is Not
 
 - Not financial advice
-- Not "make $10k/month with AI" content
+- Not a promise of specific monthly earnings
 - Not a guarantee of income
 - Not a list of get-rich-quick schemes
 
