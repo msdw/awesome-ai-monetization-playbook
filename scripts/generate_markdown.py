@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Generate browseable index pages from YAML data."""
+import sys
 import argparse
 import yaml
 from pathlib import Path
@@ -10,6 +11,11 @@ DATA = ROOT / "data"
 OFFERS_DIR = ROOT / "offers"
 
 HEADER = "<!-- AUTO-GENERATED — do not edit manually. Run: python scripts/generate_markdown.py -->\n\n"
+
+# Pages that --check found out of date. main() exits non-zero when this is not
+# empty, so a data change committed without regenerating its pages fails the gate
+# instead of passing silently.
+STALE = []
 
 # Set from --force: generate-pages.yml passes it so a page is rewritten even
 # when unchanged, which is what makes the auto-commit step deterministic.
@@ -29,6 +35,7 @@ def write_page(path, content, check_only):
     if not FORCE and path.exists() and path.read_text(encoding="utf-8") == full:
         return False
     if check_only:
+        STALE.append(path)
         print(f"  WOULD WRITE: {path.relative_to(ROOT)}")
         return True
     path.write_text(full, encoding="utf-8")
@@ -76,6 +83,10 @@ def main():
                 price_str = f" | ${price['min']}–${price['max']} {price.get('currency','USD')}"
             idx_lines.append(f"- [{offer['title']}](../data/offers.yaml){price_str}\n")
         write_page(OFFERS_DIR / "index.md", "".join(idx_lines), args.check)
+
+    if args.check and STALE:
+        print(f"\n{len(STALE)} page(s) out of date — run: python scripts/generate_markdown.py")
+        sys.exit(1)
 
     print("\nDone")
 
