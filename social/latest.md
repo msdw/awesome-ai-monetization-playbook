@@ -1,11 +1,11 @@
-# Social posts — 2026-08-22
+# Social posts — 2026-09-07
 
 Copy-paste ready. Review before publishing.
 
 ## LinkedIn
 
 ```
-This week in Awesome AI Monetization Playbook (2026-08-22):
+This week in Awesome AI Monetization Playbook (2026-09-07):
 
 → AI RAG Chatbot Implementation Package — A packaged service to deploy a retrieval-augmented generation chatbot over a company's internal documents or product knowledge base, with source citations and a human review workflow.
 → AI Customer Support Agent Package — A packaged implementation of an AI-assisted customer support workflow that handles tier-1 inquiries, drafts responses for human review, and routes complex issues to agents.
