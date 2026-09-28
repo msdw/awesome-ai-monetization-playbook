@@ -1,1 +1,13 @@
-updates: []
+updates:
+- date: '2026-09-28T15:12:45.717950'
+  action: pricing_signal_discovery
+  signals_found: 1
+  signals:
+  - title: 'Launch HN: Coverage Cat (YC S22) – Umbrella insurance via your personal
+      agent'
+    prices_observed:
+    - $1
+    - $10
+    source: https://www.coveragecat.com/
+    type: observed_public_price
+    discovered_at: '2026-09-28T15:12:45.205283'

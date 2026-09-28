@@ -1733,3 +1733,104 @@ offers:
       - implementation
     source: manual_curation
     status: accepted
+
+  - id: candidate_hn_49800566
+    title: 'Show HN: Training a model to identify AI web content from structure alone'
+    summary: 'Discovered from HN: Show HN: Training a model to identify AI web content
+      from structure alone'
+    monetization_models:
+    - productized_service
+    target_buyers:
+    - smb_owner
+    target_users:
+    - consultant
+    industries:
+    - marketing
+    pain_points:
+    - See source
+    value_delivered:
+    - See source
+    offer_scope:
+      included:
+      - See source
+      excluded: []
+    pricing_hypotheses:
+      min: null
+      max: null
+      currency: USD
+      notes: 'Source: https://arxiv.org/abs/2609.15369'
+    delivery_process:
+    - See source
+    sales_channels:
+    - community
+    validation_steps:
+    - Review source post
+    risks: []
+    scoring:
+      pain_intensity: 5
+      willingness_to_pay: 5
+      ai_fit: 6
+      buildability: 7
+      market_signal: 4
+      differentiation_potential: 5
+      monetization_potential: 5
+      compliance_risk: 3
+    tags:
+    - b2b
+    source: https://arxiv.org/abs/2609.15369
+    status: candidate
+    _meta:
+      points: 73
+      source: hacker_news
+      query: Show HN SaaS pricing
+      discovered_at: '2026-09-28T15:12:40.102606'
+  - id: candidate_hn_49789356
+    title: 'Show HN: Foremerge – Catch intent conflicts between parallel coding agents'
+    summary: 'Discovered from HN: Show HN: Foremerge – Catch intent conflicts between
+      parallel coding agents'
+    monetization_models:
+    - productized_service
+    target_buyers:
+    - smb_owner
+    target_users:
+    - consultant
+    industries:
+    - marketing
+    pain_points:
+    - See source
+    value_delivered:
+    - See source
+    offer_scope:
+      included:
+      - See source
+      excluded: []
+    pricing_hypotheses:
+      min: null
+      max: null
+      currency: USD
+      notes: 'Source: https://github.com/naw103/foremerge'
+    delivery_process:
+    - See source
+    sales_channels:
+    - community
+    validation_steps:
+    - Review source post
+    risks: []
+    scoring:
+      pain_intensity: 5
+      willingness_to_pay: 5
+      ai_fit: 6
+      buildability: 7
+      market_signal: 3
+      differentiation_potential: 5
+      monetization_potential: 5
+      compliance_risk: 3
+    tags:
+    - b2b
+    source: https://github.com/naw103/foremerge
+    status: candidate
+    _meta:
+      points: 45
+      source: hacker_news
+      query: Show HN SaaS pricing
+      discovered_at: '2026-09-28T15:12:40.102631'
