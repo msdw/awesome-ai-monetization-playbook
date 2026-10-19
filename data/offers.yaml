@@ -1733,3 +1733,54 @@ offers:
       - implementation
     source: manual_curation
     status: accepted
+
+  - id: candidate_hn_50080275
+    title: 'Show HN: Pulse Local, a Mac budgeting app whose AI models run on your machine'
+    summary: 'Discovered from HN: Show HN: Pulse Local, a Mac budgeting app whose AI
+      models run on your machine'
+    monetization_models:
+    - productized_service
+    target_buyers:
+    - smb_owner
+    target_users:
+    - consultant
+    industries:
+    - marketing
+    pain_points:
+    - See source
+    value_delivered:
+    - See source
+    offer_scope:
+      included:
+      - See source
+      excluded: []
+    pricing_hypotheses:
+      min: null
+      max: null
+      currency: USD
+      notes: 'Source: https://pulseos.finance'
+    delivery_process:
+    - See source
+    sales_channels:
+    - community
+    validation_steps:
+    - Review source post
+    risks: []
+    scoring:
+      pain_intensity: 5
+      willingness_to_pay: 5
+      ai_fit: 6
+      buildability: 7
+      market_signal: 8
+      differentiation_potential: 5
+      monetization_potential: 5
+      compliance_risk: 3
+    tags:
+    - b2b
+    source: https://pulseos.finance
+    status: candidate
+    _meta:
+      points: 121
+      source: hacker_news
+      query: Show HN SaaS pricing
+      discovered_at: '2026-10-19T14:31:00.379411'
